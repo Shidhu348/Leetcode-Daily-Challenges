@@ -15,7 +15,7 @@ public:
         ListNode* fastP = head;
         if(head->next==NULL)
             return head;
-        while(fastP and fastP->next)
+        while(fastP!=NULL and fastP->next!=NULL)
         {
             fastP = fastP->next->next;
             slowP = slowP->next;
