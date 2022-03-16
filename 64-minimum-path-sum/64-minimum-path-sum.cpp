@@ -6,7 +6,7 @@ public:
             return 0;
         int cols = grid[0].size();
         
-        int dp[rows][cols];
+        vector<vector<int>> dp(rows, vector<int>(cols, 0));
         
         dp[0][0] = grid[0][0];
         
